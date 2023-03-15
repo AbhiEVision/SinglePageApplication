@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Single Page Application</title>
+        <link rel="stylesheet" href="Styles/Style.css" />
+
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="Photos/fav.png" type="image/x-icon">
+
+        <!-- Typing Animkation-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+            integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+            crossorigin="anonymous">
+        </script>
+
+        <!-- swiper JS import-->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+            />
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- internal scripts import-->
+        <script src="Script/Typing.js" defer></script>
+        <script src="Script/Script.js" defer></script>
+        <script src="Script/Slider.js" defer></script>
+
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="name">
+                <li class="nav-item" onclick="GoHome()">
+                    <a id="name-link">Abhi Dashadiya</a>
+                </li>
+            </div>
+            <div id="other">
+                <li class="nav-item" onclick="GoSlider()">
+                    <a>Gallery</a>
+                </li>
+                <li class="nav-item" onclick="GoServices()">
+                    <a>Services</a>
+                </li>
+                <li class="nav-item" onclick="GoContactUs()">
+                    <a>Contact Us</a>
+                </li>
+            </div>
+        </nav>
+
+        <section id="home-section">
+            <div id="home-heading">
+                Introduction
+            </div>
+            <div id="Home">
+                <div id="intro-me">
+                    <div id="intro-hello">
+                        <span>H</span>ello
+                    </div>
+                    <div id="intro-Greet">
+                        Hi, My name is Abhi Dashadiya
+                    </div>
+                    <div id="intro-mine">
+                        I am a <span id="typing-here"></span>
+                    </div>
+                </div>
+                <div id="intro-image">
+                    <img src="Photos/Intro-img.jpg" alt="" width="300px">
+                </div>
+            </div>
+        </section>
+
+        <section id="Slider">
+            <div id="slider-heading">
+                Gallery
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Photos/Slider-Images/img-1.jpg"
+                            width="1000px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Photos/Slider-Images/img-2.jpg"
+                            width="1000px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Photos/Slider-Images/img-3.jpg"
+                            width="1000px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Photos/Slider-Images/img-4.jpg"
+                            width="1000px">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="Services">
+            <div id="services-heading">
+                Services
+            </div>
+            <div id="flaciblity">
+                <div class="card">
+                    <div class="card-heading">
+                        <img class="card-image"
+                            src="Photos/Services-Images/Unity.png"
+                            alt="UnityImage" width="20px"> Unity
+                    </div>
+                    <div class="card-details">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Aliquid porro doloribus tempore odio dolor!
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img class="card-image"
+                            src="Photos/Services-Images/Html5.png" alt="html 5"
+                            width="20px"> HTML
+                    </div>
+                    <div class="card-details">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Illo voluptates tempora repellendus dolorem alias!
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img class="card-image"
+                            src="Photos/Services-Images/Css3.png" alt="css 3"
+                            width="20px"> CSS
+                    </div>
+                    <div class="card-details">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ab deleniti labore enim vero quidem.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                        <img class="card-image"
+                            src="Photos/Services-Images/Js.png" alt="JavaScript"
+                            width="20px"> JavaScript
+                    </div>
+                    <div class="card-details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laboriosam aperiam corrupti perspiciatis distinctio
+                        pariatur.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ContactUs">
+            <div id="contact-form">
+                <div id="upper">
+                    <div id="title-form">
+                        <span id="title-1">
+                            Contact
+                        </span>
+                        <span id="title-2">
+                            Us
+                        </span>
+                    </div>
+                    <div id="input-form">
+                        <input class="input-class" type="text"
+                            placeholder="NAME">
+                        <input class="input-class" type="email"
+                            placeholder="E-MAIL">
+                        <input class="input-class" type="text"
+                            placeholder="CONTACT NO.">
+                        <input class="input-class" type="text"
+                            placeholder="MESSAGE">
+                        <div id="buttons">
+                            <button class="btn">
+                                Cancel
+                            </button>
+                            <button class="btn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="lower">
+                    <div id="number">
+                        CONTACT-INFO : +91 853 086 5172
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </body>
+</html>
